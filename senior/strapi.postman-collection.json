@@ -1,0 +1,659 @@
+{
+  "info": {
+    "_postman_id": "40b1ae32-606a-46a1-a3ed-61f02b9b4ffc",
+    "name": "strapi",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "ideas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/ideas",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "ideas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ideas",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "",
+            "value": "",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"minifiedDescription\": \"123\",\r\n    \"users_permissions_user\": 1,\r\n    \"fullDescription\": \"123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/ideas",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "ideas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "projectParticipants",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/project-participants",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "project-participants"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "projectParticipants",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"project\": 1,\r\n    \"users_permissions_user\": 1,\r\n    \"specialization\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/project-participants",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "project-participants"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "categoriesOfSpecialization",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/Categories-of-specializations",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "Categories-of-specializations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "categoriesOfSpecialization",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"ИТ\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/Categories-of-specializations",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "Categories-of-specializations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "projectNeededSpecializations",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/project-needed-specializations",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "project-needed-specializations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "projectNeededSpecializations",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"project\": 1,\r\n    \"specialization\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/project-needed-specializations",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "project-needed-specializations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "projects",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/projects",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "projects"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "projects",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"123\",\r\n    \"description\": \"123\",\r\n    \"idea\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/projects",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "projects"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "readyToRealize",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/ready-to-realize-users",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "ready-to-realize-users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "readyToRealize",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"idea\": 1,\r\n    \"specialization\": 1,\r\n    \"users_permissions_user\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/ready-to-realize-users",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "ready-to-realize-users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "requestForParticipationInTheProject",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/participation-in-the-project-requests",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "participation-in-the-project-requests"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "requestForParticipationInTheProject Copy",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"users_permissions_user\": 1,\r\n    \"project\": 1,\r\n    \"specialization\": 1,\r\n    \"requestAccepted\": true,\r\n    \"projectAuthorRequest\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/participation-in-the-project-requests",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "participation-in-the-project-requests"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "specializations",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/specializations",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "specializations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "specializations",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"123\",\r\n    \"category\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/specializations",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "specializations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "users",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/users",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "users",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"username1234\",\r\n    \"email\": \"username1234@strapi.com\",\r\n    \"password\": \"pswrd1234\",\r\n    \"Login\": \"username1234\",\r\n    \"FullName\": \"username1234fullname\",\r\n    \"WaitingForOffers\": true,\r\n    \"CategoriesOfSpecializations\": [{\"Id\": 16}],\r\n    \"confirmed\": true,\r\n    \"blocked\": false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/users",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ideaComments",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/idea-comments",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "idea-comments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ideaComments",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"Comment\": \"123\",\r\n    \"users_permissions_user\": 1,\r\n    \"idea\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/idea-comments",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "idea-comments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "likedIdeas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/liked-ideas",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "liked-ideas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "likedIdeas",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"users_permissions_user\": 1,\r\n    \"idea\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/liked-ideas",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "liked-ideas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Messages",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/messages",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "messages"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Messages",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"message\": \"123\",\r\n    \"author\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/messages",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "messages"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ProjectComments",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/project-comments",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "project-comments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ProjectComments",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"comment\": \"123\",\r\n    \"users_permissions_user\": 1,\r\n    \"project\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/project-comments",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "project-comments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "registerJWT",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"new user\",\r\n    \"email\": \"test@test.com\",\r\n    \"password\": \"password\"\r\n  }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:1337/auth/local/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "1337",
+          "path": [
+            "auth",
+            "local",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "auth",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"identifier\": \"test@test.com\",\r\n    \"password\": \"password\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:1337/auth/local",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "1337",
+          "path": [
+            "auth",
+            "local"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:1337"
+    }
+  ]
+}

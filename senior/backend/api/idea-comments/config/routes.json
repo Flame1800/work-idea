@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/idea-comments",
+      "handler": "idea-comments.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/idea-comments/count",
+      "handler": "idea-comments.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/idea-comments/:id",
+      "handler": "idea-comments.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/idea-comments",
+      "handler": "idea-comments.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/idea-comments/:id",
+      "handler": "idea-comments.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/idea-comments/:id",
+      "handler": "idea-comments.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

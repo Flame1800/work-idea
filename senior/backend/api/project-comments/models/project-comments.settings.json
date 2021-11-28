@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_comments",
+  "info": {
+    "name": "ProjectComments",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "comment": {
+      "type": "text"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "project": {
+      "via": "projectComments",
+      "model": "projects"
+    }
+  }
+}

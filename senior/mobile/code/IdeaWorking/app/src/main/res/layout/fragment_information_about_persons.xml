@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/personRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:foregroundGravity="center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/titleTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_user" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/goToExampleWorkButton"
+        android:layout_width="60dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/ic_next_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/slideCircleOneImageView"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/goToExampleWorkButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/goToExampleWorkButton"
+        app:srcCompat="@drawable/ic_not_selected_slide" />
+
+    <ImageView
+        android:id="@+id/slideCircleTwoImageView"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/slideCircleOneImageView"
+        app:layout_constraintStart_toEndOf="@+id/slideCircleOneImageView"
+        app:layout_constraintTop_toTopOf="@+id/slideCircleOneImageView"
+        app:srcCompat="@drawable/ic_selected_slide" />
+
+    <ImageView
+        android:id="@+id/slideCircleThreeImageView"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/slideCircleTwoImageView"
+        app:layout_constraintStart_toEndOf="@+id/slideCircleTwoImageView"
+        app:layout_constraintTop_toTopOf="@+id/slideCircleTwoImageView"
+        app:srcCompat="@drawable/ic_not_selected_slide" />
+
+    <TextView
+        android:id="@+id/subtitleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Найдите специалиста, которому будет интересен ваш проект"
+        android:textColor="@color/dark_gray"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/goToExampleWorkButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/montserrat_extra_bold"
+        android:text="Специалисты"
+        android:textColor="@color/dark"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/subtitleTextView"
+        app:layout_constraintEnd_toEndOf="@+id/subtitleTextView"
+        app:layout_constraintStart_toStartOf="@+id/subtitleTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

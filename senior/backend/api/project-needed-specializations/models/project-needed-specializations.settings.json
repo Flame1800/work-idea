@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_needed_specializations",
+  "info": {
+    "name": "ProjectNeededSpecializations",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "specialization": {
+      "model": "specializations"
+    },
+    "project": {
+      "via": "requiredSpecializations",
+      "model": "projects"
+    }
+  }
+}

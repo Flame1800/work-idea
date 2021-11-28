@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_participants",
+  "info": {
+    "name": "ProjectParticipants",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "specialization": {
+      "model": "specializations"
+    },
+    "user": {
+      "via": "project_participants",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "project": {
+      "via": "project_participants",
+      "model": "projects"
+    }
+  }
+}

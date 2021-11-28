@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ready-to-realize-users",
+      "handler": "ready-to-realize-user.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ready-to-realize-users/count",
+      "handler": "ready-to-realize-user.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ready-to-realize-users/:id",
+      "handler": "ready-to-realize-user.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ready-to-realize-users",
+      "handler": "ready-to-realize-user.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ready-to-realize-users/:id",
+      "handler": "ready-to-realize-user.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ready-to-realize-users/:id",
+      "handler": "ready-to-realize-user.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "Projects",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "idea": {
+      "model": "ideas"
+    },
+    "description": {
+      "type": "string"
+    },
+    "Author": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "projectComments": {
+      "collection": "project-comments",
+      "via": "project"
+    },
+    "isDone": {
+      "type": "boolean",
+      "default": false
+    },
+    "requiredSpecializations": {
+      "collection": "project-needed-specializations",
+      "via": "project"
+    },
+    "likedBy": {
+      "via": "likedProjects",
+      "plugin": "users-permissions",
+      "collection": "user"
+    },
+    "category": {
+      "model": "categories-of-specializations"
+    },
+    "project_participants": {
+      "collection": "project-participants",
+      "via": "project"
+    }
+  }
+}

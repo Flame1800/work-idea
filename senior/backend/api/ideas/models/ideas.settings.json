@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ideas",
+  "info": {
+    "name": "ideas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Author": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "minifiedDescription": {
+      "type": "string",
+      "unique": false
+    },
+    "fullDescription": {
+      "type": "string"
+    },
+    "idea_comments": {
+      "collection": "idea-comments",
+      "via": "idea"
+    },
+    "budget": {
+      "type": "float"
+    },
+    "isOfficialProject": {
+      "type": "boolean",
+      "default": false
+    },
+    "likedBy": {
+      "via": "likedIdeas",
+      "plugin": "users-permissions",
+      "collection": "user"
+    },
+    "category": {
+      "model": "categories-of-specializations"
+    }
+  }
+}

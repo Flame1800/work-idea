@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "participation_in_the_project_requests",
+  "info": {
+    "name": "ParticipationInTheProjectRequest",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "project": {
+      "model": "projects"
+    },
+    "specialization": {
+      "model": "specializations"
+    },
+    "requestAccepted": {
+      "type": "boolean"
+    },
+    "projectAuthorRequest": {
+      "type": "boolean"
+    },
+    "users_permissions_user": {
+      "via": "participationInTheProjectRequests",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

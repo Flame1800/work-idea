@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories_of_specializations",
+  "info": {
+    "name": "categoriesOfSpecializations",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": false,
+      "unique": true
+    }
+  }
+}

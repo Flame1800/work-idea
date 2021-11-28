@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/myInformationMenuItem"
+        android:icon="@drawable/ic_person"
+        android:title="Личный кабиент" />
+
+    <item
+        android:id="@+id/projectsMenuItem"
+        android:icon="@drawable/ic_project"
+        android:title="Проекты" />
+
+    <item
+        android:id="@+id/ideasMenuItem"
+        android:icon="@drawable/ic_idea"
+        android:title="Идеи" />
+
+    <item
+        android:id="@+id/specialistsMenuItem"
+        android:icon="@drawable/ic_specialist"
+        android:title="Специалисты" />
+
+</menu>

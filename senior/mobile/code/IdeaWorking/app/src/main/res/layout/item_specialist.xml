@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="8dp"
+    android:background="@drawable/shape_pink_rectangle">
+
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_avatar" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        style="@style/title_three_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="12dp"
+        android:text="Lamborci Mona"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+    <TextView
+        android:id="@+id/textView23"
+        style="@style/subtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Статус"
+        app:layout_constraintStart_toStartOf="@+id/nameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView" />
+
+    <TextView
+        android:id="@+id/textView24"
+        style="@style/title_three_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Навыки"
+        app:layout_constraintStart_toStartOf="@+id/countProjectTextView"
+        app:layout_constraintTop_toBottomOf="@+id/countProjectTextView" />
+
+    <TextView
+        android:id="@+id/countProjectTextView"
+        style="@style/subtitle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="3 проекта"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+    <TextView
+        android:id="@+id/directionsTextView"
+        style="@style/subtitle_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:text="Бэкенд, Средний (Middle) · Java · Java "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/openProfileButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginBottom="12dp"-->
+<!--        android:background="@drawable/shaper_yellow_rectangle"-->
+<!--        android:fontFamily="@font/montserrat_extra_bold"-->
+<!--        android:paddingHorizontal="16dp"-->
+<!--        android:text="Открыть профиль"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/directionsTextView"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/directionsTextView" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

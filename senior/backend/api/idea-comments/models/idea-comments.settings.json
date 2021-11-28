@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "idea_comments",
+  "info": {
+    "name": "IdeaComments",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Comment": {
+      "type": "text"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "idea": {
+      "via": "idea_comments",
+      "model": "ideas"
+    }
+  }
+}

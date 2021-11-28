@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape_stroke"
+        android:fontFamily="@font/montserrat_extra_bold"
+        android:gravity="center"
+        android:paddingHorizontal="16dp"
+        android:text="Регистрация"
+        android:textAllCaps="false"
+        android:textColor="@color/dark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/signInButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signInButton"
+        style="@style/dark_button"
+        android:layout_width="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:text="Вход"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/signUpButton"
+        app:layout_constraintTop_toTopOf="@+id/signUpButton" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="256dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_man" />
+
+    <TextView
+        android:id="@+id/titleGuestTextView"
+        style="@style/title_one_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Реализуй свою идею просто"
+        app:layout_constraintBottom_toTopOf="@+id/subtitleGuestTextView"
+        app:layout_constraintEnd_toEndOf="@+id/signInButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/signUpButton"
+        app:layout_constraintTop_toBottomOf="@+id/signUpButton"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startSliderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/shaper_orange_rectangle"
+        android:fontFamily="@font/montserrat_extra_bold"
+        android:gravity="center"
+        android:paddingHorizontal="16dp"
+        android:text="Начать знакомство"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitleGuestTextView" />
+
+    <TextView
+        android:id="@+id/subtitleGuestTextView"
+        style="@style/subtitle_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:text="Wireframe is still important for ideation. It will help you to quickly test idea."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/startSliderButton"
+        app:layout_constraintEnd_toEndOf="@+id/titleGuestTextView"
+        app:layout_constraintStart_toStartOf="@+id/titleGuestTextView"
+        app:layout_constraintTop_toBottomOf="@+id/titleGuestTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_top" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ideaRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="128dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_idea" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/goToInformationAboutPersonsButton"
+        android:layout_width="60dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/ic_next_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/slideCircleOneImageView"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/goToInformationAboutPersonsButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/goToInformationAboutPersonsButton"
+        app:srcCompat="@drawable/ic_selected_slide" />
+
+    <ImageView
+        android:id="@+id/slideCircleTwoImageView"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/slideCircleOneImageView"
+        app:layout_constraintStart_toEndOf="@+id/slideCircleOneImageView"
+        app:layout_constraintTop_toTopOf="@+id/slideCircleOneImageView"
+        app:srcCompat="@drawable/ic_not_selected_slide" />
+
+    <ImageView
+        android:id="@+id/slideCircleThreeImageView"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/slideCircleTwoImageView"
+        app:layout_constraintStart_toEndOf="@+id/slideCircleTwoImageView"
+        app:layout_constraintTop_toTopOf="@+id/slideCircleTwoImageView"
+        app:srcCompat="@drawable/ic_not_selected_slide" />
+
+    <TextView
+        android:id="@+id/subtitleIdeaInformationTextView"
+        style="@style/subtitle_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Предложите свои идеи другим людям, и, возможно, их реализуют"
+        app:layout_constraintBottom_toTopOf="@+id/goToInformationAboutPersonsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/titleIdeaInformationTextView"
+        style="@style/title_one_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Идеи"
+        app:layout_constraintBottom_toTopOf="@+id/subtitleIdeaInformationTextView"
+        app:layout_constraintEnd_toEndOf="@+id/subtitleIdeaInformationTextView"
+        app:layout_constraintStart_toStartOf="@+id/subtitleIdeaInformationTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

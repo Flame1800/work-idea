@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/nameTextView"
+                style="@style/title_three_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Genbai Benno"
+                app:layout_constraintStart_toEndOf="@+id/imageView15"
+                app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_avatar" />
+
+            <TextView
+                android:id="@+id/textView30"
+                style="@style/title_three_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:text="Требуемые навыки"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageView15"
+                app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+            <TextView
+                android:id="@+id/categoriesTextView"
+                style="@style/subtitle_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/textView30"
+                app:layout_constraintStart_toStartOf="@+id/textView30"
+                app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+            <TextView
+                android:id="@+id/titleProjectTextView"
+                style="@style/title_two_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:text="Contra wireframe kit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/categoriesTextView"
+                app:layout_constraintTop_toBottomOf="@+id/categoriesTextView" />
+
+            <TextView
+                android:id="@+id/descriptionProjectTextView"
+                style="@style/subtitle_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:text="Wireframe is still important for ideation. It will help you to quickly test idea. Sometime it’s ok to feel the body text will some random paragraph like this."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/titleProjectTextView"
+                app:layout_constraintTop_toBottomOf="@+id/titleProjectTextView" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/enterProjectButton"
+                style="@style/dark_button"
+                android:layout_width="0dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/shaper_orange_rectangle"
+                android:text="Откликнуться"
+                app:layout_constraintEnd_toEndOf="@+id/descriptionProjectTextView"
+                app:layout_constraintStart_toStartOf="@+id/descriptionProjectTextView"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionProjectTextView" />
+
+            <TextView
+                android:id="@+id/textView34"
+                style="@style/title_two_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="24dp"
+                android:text="Участники"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/enterProjectButton" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/participantRecyclerView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView34"
+                tools:listitem="@layout/item_specialist" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

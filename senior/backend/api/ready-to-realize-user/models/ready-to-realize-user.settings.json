@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ready_to_realize_users",
+  "info": {
+    "name": "ReadyToRealizeUser",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idea": {
+      "model": "ideas"
+    },
+    "specialization": {
+      "model": "specializations"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
